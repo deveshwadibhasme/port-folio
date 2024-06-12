@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Josefin Sans" ,sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main{
+    margin: 0 auto;
+    display: block;
+    max-height: 300vh;
+    max-width: 100vw;
+    background-color: rgb(16, 234, 241);
+    background-image: url(/content/gulf.svg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+nav{
+    margin: 0 auto;
+    display: flex;
+    height: 10vh;
+    max-width: 100vw;
+}
+
+nav .nav-content{
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+.title{
+    font-size: x-large;
+    color: violet;
+}
+nav .nav-content .nav{
+    max-width: 80vw;
+    height: 100%;
+    
+}
+nav .nav-content .nav ul{
+    margin: auto;
+    display: flex;
+    min-width: 50vw;
+    min-height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .nav-content ul a{
+    color: aliceblue;
+    padding: 8px;
+}
+nav .nav-content ul a:hover{
+    background-color: rgb(158, 204, 245);
+    color: black;
+}
+.hero{
+    margin: 0 auto;
+    min-height: 95vh;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+}
+.hero-content{
+    margin: 0 auto;
+    display: flex;
+    min-width: 95vw;
+    height: 70vh;
+    justify-content: space-around;  
+    align-items: center;
+}
+.details-content{
+    display: grid;
+}
+
+.hero-details{
+    margin: 0 auto;
+    display:flex;
+    width: 60vw;
+    max-width:40vw;
+    height: 100%;
+    align-items: center;
+}
+.itachi{
+    visibility: hidden;
+    display: none;
+}
+.role{
+    display: flex;
+    font-weight: 700;
+    background-color: aquamarine;
+    width: 30vh; 
+    height: 5vh;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.hero-profile{
+    margin: 0 auto;
+    display: flex;
+    width: 40vh;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img{
+    width: 40vh;
+    height: 40vh;
+    background-color: forestgreen;
+    border-radius: 50%;
+}
