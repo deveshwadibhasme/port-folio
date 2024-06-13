@@ -17,17 +17,30 @@ main{
     max-height: 300vh;
     max-width: 100vw;
     background-color: rgb(16, 234, 241);
+    overflow: hidden;
+    z-index: -10;
+}
+.hero{
+    position: relative;
+    top: -10vh;
+    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
     background-image: url(/content/gulf.svg);
     background-size: cover;
     background-position: center;
-    overflow: hidden;
-    background-attachment: fixed;
-}
+    transition: all 2s;
+    transform-origin: left;
+} 
+
 nav{
     margin: 0 auto;
     display: flex;
     height: 10vh;
     max-width: 100vw;
+    background-color: transparent;
+    z-index: 5;
 }
 
 nav .nav-content{
@@ -38,12 +51,13 @@ nav .nav-content{
     height: 100%;
     text-align: center;
     align-items: center;
+    z-index: 5;
 }
 .title{
     font-size: x-large;
     color: violet;
 }
-nav .nav-content .nav{
+ nav .nav-content .nav{
     max-width: 80vw;
     height: 100%;
     
@@ -64,14 +78,7 @@ nav .nav-content ul a:hover{
     background-color: rgb(158, 204, 245);
     color: black;
 }
-.hero{
-    margin: 0 auto;
-    min-height: 95vh;
-    max-width: 100vw;
-    display: flex;
-    align-items: center;
-}
-.hero-content{
+.hero .hero-content{
     margin: 0 auto;
     display: flex;
     min-width: 95vw;
@@ -79,11 +86,11 @@ nav .nav-content ul a:hover{
     justify-content: space-around;  
     align-items: center;
 }
-.details-content{
+.hero .hero-content .hero-details .details-content{
     display: grid;
 }
 
-.hero-details{
+.hero .hero-content .hero-details{
     margin: 0 auto;
     display:flex;
     width: 60vw;
@@ -99,13 +106,14 @@ nav .nav-content ul a:hover{
     display: flex;
     font-weight: 700;
     background-color: aquamarine;
-    width: 30vh; 
+    width: 35vh;
+    max-width:35vh; 
     height: 5vh;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
 }
-.hero-profile{
+.hero .hero-profile{
     margin: 0 auto;
     display: flex;
     width: 40vh;
@@ -114,9 +122,65 @@ nav .nav-content ul a:hover{
     align-items: center;
 }
 
-.hero-img{
+.hero  .hero-profile .hero-img{
     width: 40vh;
     height: 40vh;
-    background-color: forestgreen;
+    background-color: rgb(230, 109, 88);
     border-radius: 50%;
+    background-image: url(/content/itachi.png);
+    background-size: cover;
+}
+.social-media{
+    max-width: 50%;
+    min-height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+    font-size: x-large;
+}
+i{
+    color: #000;
+}
+.education-details{
+ margin: 0 auto;
+ display: flex;
+ max-width: 100vw;
+ min-height: 100vh;
+ justify-content: center;
+ background-image: url(/content/tech.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.education{
+    font-size: xx-large;
+    font-weight: 800;
+    margin-bottom: 3vh;
+}
+
+.details{
+    margin: 0 auto;
+    height: 50vh;
+    max-width: 80vh;
+    display: grid;
+    row-gap:1vh ;
+}
+
+.details #details ul{
+    margin: 10px 25px;
+    align-items:left;
+    display: grid;
+    gap: 2vh;
+}
+.book-icon{
+    margin: 0 auto;
+    display: flex;
+    height: 60vh;
+    max-width: 50vw;
+    align-items: flex-end;
+    transition:all 2s;
+}
+
+.book-icon img{
+    height: 300px;  
 }
