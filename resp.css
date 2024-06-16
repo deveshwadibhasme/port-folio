@@ -134,12 +134,11 @@
 
     #project-globe{
         height: 35vh;
-        width: 30vw;
         transform: translateY(-400px);
     }
     
 
-    /* .project-h1 {
+    .project-h1 {
         margin: 0 auto;
         display: grid;
         font-size: 1.5em;
@@ -152,7 +151,7 @@
         display: grid;
         font-size: 1em;
         max-width: 100vw;
-    } */
+    }
 
    .blocks{
         zoom: 60%;
