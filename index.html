@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gotcha Catch em' all</title>
+    <title>Gotcha Catch em all</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="resp.css">
     <script src="https://kit.fontawesome.com/0f0486bb75.js" crossorigin="anonymous"></script>
@@ -23,8 +23,8 @@
                 <div class="nav">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Projects</a></li>
+                        <li><a href="#education-details">Education</a></li>
+                        <li><a href="#project-details">Projects</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
@@ -55,7 +55,7 @@
             </div>
             <div class="itachi"><img src="/content/itachi.png" alt=""></div>
         </div>
-        <div class="education-details">
+        <div class="education-details" id="education-details">
             <div class="details">
                 <div class="education">Education & Skills</div>
                 <h4>Education</h4>
@@ -78,6 +78,85 @@
             </div>
             <div class="book-icon">
                 <img src="/content/book.png" alt="" height="500px">
+            </div>
+        </div>
+        <div class="project-details" id="project-details">
+        <div class="details-project">
+            <div class="project-h1">
+                Heres My Projects that I created during my learning phase.
+            </div>
+            <div class="project-h2">
+                This Project is showcase of my knowledge and skills
+            </div>
+            <marquee behavior="slow" direction="right">(Yet to release)</marquee>
+        </div>
+            <div class="project-index">
+                <div class="project-1" id="project-globe" style="--i:1">
+                    <img id="pro-img" src="/project-file/colorful-dragon-design_.avif" alt="">
+                </div>
+                <div class="project-2" id="project-globe" style="--i:2">
+                    <img id="pro-img" src="/project-file/flat-design-dragon-silhouette.avif" alt="">
+                </div>
+                <div class="project-3" id="project-globe" style="--i:3" >
+                    <img id="pro-img" src="/project-file/hand-drawn-japanese-dragon.jpg" alt="">
+                </div>
+                <div class="project-4" id="project-globe" style="--i:4">
+                    <img id="pro-img" src="/project-file/dragon-middle-mountain-generative.jpg" alt="">
+                </div>
+                <div class="project-3" id="project-globe" style="--i:5">
+                    <img id="pro-img" src="./project-file/hand-drawn-chinese-zodiac-animals.jpg" alt="">
+                </div>
+                <div class="project-2" id="project-globe" style="--i:6">
+                    <img id="pro-img" src="/content/rengoku.png" alt="">
+                </div>
+                <div class="project-1" id="project-globe" style="--i:7">
+                    <img id="pro-img" src="/content/rengoku.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="about-details" id="about-details">
+            <div class="block-wrapper">
+                <div class="blocks">
+                    <div class="block-icon">
+                        <i class="fa-location-dot fa-solid"></i>
+                    </div>
+                    <div class="block-title">
+                        My location
+                    </div>
+                    <div class="block-info">
+                        37,Shanimandir,Kalmana,Nagpur 440026
+                    </div>
+                </div>
+                <div class="blocks">
+                    <div class="block-icon">
+                        <i class="fa-phone fa-solid"></i>
+                    </div>
+                    <div class="block-title">
+                       Phone Number
+                    </div>
+                    <div class="block-info">
+                        9689479295
+                    </div>
+                </div>
+                <div class="blocks">
+                    <div class="block-icon">
+                        <i class="fa-envelope fa-solid"></i>
+                    </div>
+                    <div class="block-title">
+                       EMAIL
+                    </div>
+                    <div class="block-info">
+                        deveshwadibhasme.12@gmail.com
+                    </div>
+                </div>
+            </div>
+            <div class="contact-us">
+                <div class="us-h1">Contact us</div>
+                <form action="#no-backend" id="form">
+                    <input type="text" name="name" id="text" placeholder="Enter your name">
+                    <input type="email" name="e-mail" id="email" placeholder="Enter you valid email address">
+                    <input type="text" name="feedback" id="feedback">
+                </form>
             </div>
         </div>
     </main>
